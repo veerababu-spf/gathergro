@@ -22,7 +22,7 @@ const LoginForm = () => {
         setSuccess('');
 
         try {
-            const response = await axios.post('https://dummyjson.com/auth/login', {
+            const response = await axios.post('localhost:8080/CareerBoost/login', {
                 username: email,
                 password
             });
