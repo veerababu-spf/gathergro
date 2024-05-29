@@ -2,8 +2,11 @@
 
 import { useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const JoinForm = () => {
+    const router = useRouter();
+
     const [formData, setFormData] = useState({
         emailId: '',
         password: '',
@@ -27,6 +30,8 @@ const JoinForm = () => {
             const response = await axios.post('http://localhost:8080/CareerBoost/register', formData);
             console.log('User registered successfully:', response.data);
             // Redirect to Login page
+            router.push('/log-in')
+            // setFormData({}) // after submit the form should flush fields
         } catch (error) {
             console.error('Error registering user:', error);
         }

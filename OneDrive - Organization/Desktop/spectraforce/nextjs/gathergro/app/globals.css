@@ -40,7 +40,8 @@ body {
     line-height: 24px;
 }
 body{
-  background: #17151e;
+  /* background: #17151e; */
+  background: #514a68;
 }
 .join-header{
     background: linear-gradient(90deg, #6C55FF 0%, #7449DC 100%);
