@@ -1,0 +1,78 @@
+body,
+html {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1;
+}
+
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    background: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.main-content {
+    padding-top: 70px;
+    /* Adjust based on header height */
+    padding-bottom: 70px;
+    /* Adjust based on footer height */
+}
+
+.bg-body-tertiary {
+    background: #FFF5EE !important;
+    /* Optional: Set the background color for the navbar */
+}
+
+.navbar .container-fluid,
+.navbar-collapse {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+/* Section 1 */
+.section-1 {
+    background: url('./images/image1.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 160px 0px;
+}
+
+.section-2 {
+    background-color: #05668D;
+}
+
+.section-1 h1,
+.section-1 h2,
+.section-1 p {
+    margin-bottom: 20px;
+}
+
+.section-1 .btn {
+    background-color: #007bff;
+    border: none;
+}
+
+.section-1 .btn:hover {
+    background-color: #0056b3;
+}
